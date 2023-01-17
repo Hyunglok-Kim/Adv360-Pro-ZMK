@@ -8,13 +8,13 @@ macro_cmd_left: macro_cmd_left{
 compatible = "zmk,behavior-macro";
 label = "macro_cmd_left";
 #binding-cells = <0>;
-bindings = <&kp LCMD>, <&kp LEFT_ARROW>;
+bindings = <&kp LEFT_ALT>, <&kp LEFT_SHIFT>, <&kp LEFT_ARROW>;
 };
 macro_cmd_right: macro_cmd_right{
 compatible = "zmk,behavior-macro";
 label = "macro_cmd_right";
 #binding-cells = <0>;
-bindings = <&kp LCMD>, <&kp RIGHT_ARROW>;
+bindings = <&kp LEFT_ALT>, <&kp LEFT_SHIFT>, <&kp RIGHT_ARROW>;
 };
 macro_clean_paste: macro_clean_paste{
 compatible = "zmk,behavior-macro";
