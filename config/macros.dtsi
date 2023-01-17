@@ -1,38 +1,32 @@
+macro_clean_paste: macro_clean_paste{
+compatible = "zmk,behavior-macro";
+label = "macro_clean_paste";
+#binding-cells = <0>;
+bindings = <&sk LCTRL>, <&sk LEFT_SHIFT>, <&sk LCMD>, <&kp V>;
+};
+macro_sht_alt_left: macro_sht_alt_left{
+compatible = "zmk,behavior-macro";
+label = "macro_sht_alt_left";
+#binding-cells = <0>;
+bindings = <&sk LEFT_SHIFT>, <&sk LEFT_ALT>, <&kp LEFT_ARROW>;
+};
+macro_sht_alt_right: macro_sht_alt_right{
+compatible = "zmk,behavior-macro";
+label = "macro_sht_alt_right";
+#binding-cells = <0>;
+bindings = <&sk LEFT_SHIFT>, <&sk LEFT_ALT>, <&kp RIGHT_ARROW>;
+};
 macro_ctr_shift_cmd: macro_ctr_shift_cmd{
 compatible = "zmk,behavior-macro";
 label = "macro_ctr_shift_cmd";
 #binding-cells = <0>;
-bindings = <&kp RCTRL>, <&kp LEFT_SHIFT>, <&kp LCMD>;
+bindings = <&sk RCTRL>, <&sk LEFT_SHIFT>, <&sk LCMD>;
 };
 macro_cmd_z: macro_cmd_z{
 compatible = "zmk,behavior-macro";
 label = "macro_cmd_z";
 #binding-cells = <0>;
-bindings = <&kp LCMD>, <&kp Z>;
-};
-macro_cmd_left: macro_cmd_left{
-compatible = "zmk,behavior-macro";
-label = "macro_cmd_left";
-#binding-cells = <0>;
-bindings = <&kp LEFT_ALT>, <&kp LEFT_SHIFT>, <&kp LEFT_ARROW>;
-};
-macro_cmd_right: macro_cmd_right{
-compatible = "zmk,behavior-macro";
-label = "macro_cmd_right";
-#binding-cells = <0>;
-bindings = <&kp LEFT_ALT>, <&kp LEFT_SHIFT>, <&kp RIGHT_ARROW>;
-};
-macro_clean_paste: macro_clean_paste{
-compatible = "zmk,behavior-macro";
-label = "macro_clean_paste";
-#binding-cells = <0>;
-bindings = <&kp LEFT_CONTROL>, <&kp LEFT_SHIFT>, <&kp RIGHT_COMMAND>, <&kp V>;
-};
-macro_clean_copy: macro_clean_copy{
-compatible = "zmk,behavior-macro";
-label = "macro_clean_copy";
-#binding-cells = <0>;
-bindings = <&kp LCTRL>, <&kp LSHIFT>, <&kp LEFT_COMMAND>, <&kp C>;
+bindings = <&sk LCMD>, <&kp Z>;
 };
 macro_quotes: macro_quotes{
 compatible = "zmk,behavior-macro";
